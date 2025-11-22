@@ -9,6 +9,7 @@ import { isValidPassword } from "../utils/passwordPolicy.js";
 export const authRouter = express.Router();
 
 // Normal user signup
+
 authRouter.post("/signup", validateSignup, async (req, res) => {
   try {
     const { name, email, address, password } = req.body;
