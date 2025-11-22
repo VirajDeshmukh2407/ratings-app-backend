@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const { Pool } = pg;
-console.log("Type of password:", typeof process.env.DB_NAME); // should print 'string'
+console.log("Type of password:", typeof process.env.DB_PASSWORD);
 console.log("Value:", process.env.DB_PASSWORD);
 export const pool = new Pool({
   host: process.env.DB_HOST,
