@@ -24,7 +24,7 @@ app.use("/api/admin", adminRouter);
 app.use("/api/stores", storeRouter);
 app.use("/api/owner", ownerRouter);
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Backend running on http://localhost:${PORT}`);
 });
